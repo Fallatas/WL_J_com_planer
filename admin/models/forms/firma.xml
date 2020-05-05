@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+        addrulepath="/administrator/components/com_planer/models/rules"
+>
+    <fieldset name="details">
+        <field
+                name="id"
+                type="hidden"
+                />
+
+        <field
+                name="firmentitle"
+                type="text"
+                label="COM_JOBS_JOB_FIELD_TITLE_LABEL"
+                description="COM_JOBS_JOB_FIELD_TITLE_DESC"
+                size="40"
+                class="inputbox validate-title"
+                validate="title"
+                required="true"
+                default=""
+        />
+
+        <field
+                name="kundennummer"
+                type="text"
+                default="Some text"
+                label="COM_PLANER_FIELD_KUNDENNUMMER_LABEL"
+                description="COM_PLANER_FIELD_KUNDENNUMMER_DESC"
+                size="10"
+        />
+
+        <field
+                name="firmenname"
+                type="text"
+                default="Some text"
+                label="COM_PLANER_FIELD_FIRMENNAME_LABEL"
+                description="COM_PLANER_FIELD_FIRMENNAME_DESC"
+                size="10"
+        />
+
+        <field 	  name="firmenmail"
+                  type="email"
+                  label="COM_PLANER_FIELD_FIRMENMAIL_LABEL"
+                  description="COM_PLANER_FIELD_FIRMENMAIL_DESC"
+                  required="true"
+                  size="30"
+                  class="inputbox"
+                  validate="email"
+        />
+
+        <field
+                name="land"
+                type="text"
+                default="Some text"
+                label="COM_PLANER_FIELD_LAND_LABEL"
+                description="COM_PLANER_FIELD_LAND_DESC"
+                size="10"
+        />
+
+        <field
+                name="firmenplz"
+                type="text"
+                default="Some text"
+                label="COM_PLANER_FIELD_FIRMENPLZ_LABEL"
+                description="COM_PLANER_FIELD_FIRMENPLZ_DESC"
+                size="10"
+        />
+
+        <field
+                name="ort"
+                type="text"
+                default="Some text"
+                label="COM_PLANER_FIELD_FIRMEORT_LABEL"
+                description="COM_PLANER_FIELD_FIRMENORT_DESC"
+                size="10"
+        />
+
+        <field
+                name="laenge"
+                type="text"
+                default="Some text"
+                label="COM_PLANER_FIELD_FIRMENLAENGE_LABEL"
+                description="COM_PLANER_FIELD_FIRMELAENGE_DESC"
+                size="10"
+        />
+
+        <field
+                name="breite"
+                type="text"
+                default="Some text"
+                label="COM_PLANER_FIELD_FIRMENBREITE_LABEL"
+                description="COM_PLANER_FIELD_FIRMENBREITE_DESC"
+                size="10"
+        />
+
+        <field
+                name="description"
+                type="editor"
+                label="COM_PLANER_FIELD_DESCRITION_LABEL"
+                description="COM_PLANER_FIELD_DESCRITION_DESC"
+        />
+
+    </fieldset>
+</form>

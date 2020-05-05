@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.7.0" method="upgrade">
+	<name>COM_PLANER</name>
+	<creationDate>April 2020</creationDate>
+	<author>Thomas Winterling</author>
+	<authorEmail>winterling-labs.de</authorEmail>
+	<authorUrl>http://www.winterling-labs.de</authorUrl>
+	<copyright>Copyright 2020 Thomas Winterling</copyright>
+	<license>GPL v2 or later</license>
+	<version>0.0.1</version>
+	<description>COM_PLANER_DESCRIPTION</description>
+
+	<!-- PHP-Skript wird ausgeführt bei Installation, Deinstallation und Update -->
+	<scriptfile>script.php</scriptfile>
+
+	<!-- SQL-Skript für die Installation -->
+	<install> 
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<!-- SQL-Skript für die Deinstallation -->
+	<uninstall> 
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<!-- SQL-Skripte für die Aktualisierung der Erweiterung -->
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+	
+ 	<!-- Kopieranweisungen für das Frontend -->
+
+	
+ 	<!-- Kopieranweisungen für das Media-Verzeichnis -->
+	<media destination="com_planer" folder="media">
+		<folder>images</folder>
+	</media>
+	
+ 	<languages folder="site">
+		<language tag="de-DE">language/de-DE/de-DE.com_planer.ini</language>
+	</languages>
+
+	<administration>
+		<!-- Administrations Menü -->
+
+		<menu img="../media/com_jobs/images/jobs-16x16.png">COM_PLANER</menu>
+		<submenu>
+			<menu link="option=com_planer&amp;view=dashboard" img="class:d">Dashboard</menu>
+			<menu link="option=com_contact&amp;view=contact" img="class:job">Neuen Kontakt anelgen</menu>
+			<menu link="option=com_contact&amp;view=contacts" img="class:job">Kontakte ansehen</menu>
+			<menu link="option=com_planer&amp;view=members" img="class:memebers">Kunden ansehen</menu>
+			<menu link="option=com_planer&amp;view=mails" img="class:mails">Mails ansehen</menu>
+			<menu link="option=com_planer&amp;view=firma" img="class:firma">Neue Firma anlegen</menu>
+			<menu link="option=com_planer&amp;view=firmen" img="class:firmen">Firmen ansehen</menu>
+			<menu link="option=com_planer&amp;view=statistiken" img="class:statistiken">Statistiken ansehen</menu>
+			<menu link="option=com_planer&amp;view=termin" img="class:termin">Neuen Termin anlegen</menu>
+			<menu link="option=com_planer&amp;view=termine" img="class:termine">Termine ansehen</menu>
+		</submenu>
+		<!-- Kopieranweisungen für das Backend -->
+		<files folder="admin">
+			<filename>config.xml</filename>
+			<filename>access.xml</filename>
+			<filename>planer.php</filename>
+			<filename>controller.php</filename>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+		</files>
+ 
+		<languages folder="admin">
+			<language tag="de-DE">language/de-DE/de-DE.com_planer.ini</language>
+			<language tag="de-DE">language/de-DE/de-DE.com_planer.sys.ini</language>
+		</languages>
+	</administration>
+ 
+	<!-- UPDATESERVER DEFINITION -->
+	<updateservers>
+		<server type="extension" priority="1" name="Jobs Update Site">http://yourdomain.com/update/jobs-update.xml</server>
+	</updateservers>
+ 
+</extension>

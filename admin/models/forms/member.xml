@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+        addrulepath="/administrator/components/com_planer/models/rules"
+>
+    <fieldset name="details">
+        <field
+                name="id"
+                type="hidden"
+                />
+				
+		<field
+                name="title"
+                type="text"
+                label="COM_JOBS_JOB_FIELD_TITLE_LABEL"
+                description="COM_JOBS_JOB_FIELD_TITLE_DESC"
+                size="40"
+                class="inputbox validate-title"
+                validate="title"
+                required="true"
+                default=""
+                />		
+				
+		<field
+                name="catid"
+                type="category"
+                extension="com_jobs"
+                class="inputbox"
+                default=""
+                label="COM_JOBS_JOB_FIELD_CATID_LABEL"
+                description="COM_JOBS_JOB_FIELD_CATID_DESC"
+                required="true"
+                >
+            <option value="0">JOPTION_SELECT_CATEGORY</option>
+        </field>	
+		
+		<field type="spacer" name="Kontaktdaten" label="Kontaktdaten" />
+		
+		<field
+                name="handy"
+                type="text"
+                label="COM_PLANER_FIELD_HANDY_LABEL"
+                description="COM_PLANER_FIELD_HANDY_DESC"
+                size="40"
+                class="inputbox validate-title"
+                required="true"
+                default=""
+                />	
+				
+        <field
+                name="telefon"
+                type="text"
+                label="COM_PLANER_FIELD_TELEFON_LABEL"
+                description="COM_PLANER_FIELD_TELEFON_DESC"
+                size="40"
+                class="inputbox validate-title"
+                required="true"
+                default=""
+                />
+				
+		<field
+                name="fax"
+                type="text"
+                label="COM_PLANER_FIELD_FAX_LABEL"
+                description="COM_PLANER_FIELD_FAX_DESC"
+                size="40"
+                class="inputbox validate-title"
+                required="true"
+                default=""
+                />	
+		
+		<field 	name="email" 
+				type="email"
+				label="COM_PLANER_FIELD_MAIL_LABEL"
+				description="COM_PLANER_FIELD_MAIL_DESC"
+				required="true"
+				size="30"
+				class="inputbox"
+				validate="email" 
+				/>
+ 
+ 
+		<field type="spacer" name="Persönliche-Daten" label="Persönliche-Daten" />
+		
+		
+		
+		<field 	name="nametitle" 	
+				type="radio" 
+				default="0" 
+				label="COM_PLANER_FIELD_NAMETITLE_LABEL" 
+				description="COM_PLANER_FIELD_NAMETITLE_DESC"
+		>
+		
+			<option value="0">Herr</option>
+			<option value="1">Frau</option>
+			<option value="2">Dr.</option>
+			<option value="3">Professor</option>
+		</field>
+		
+		
+		
+		<field 	name="anrede" 	
+				type="radio" 
+				default="0" 
+				label="COM_PLANER_FIELD_ANREDE_LABEL" 
+				description="COM_PLANER_FIELD_ANREDE_DESC"
+		>
+		
+			<option value="0">Mänlich</option>
+			<option value="1">Weiblich</option>
+		</field>
+		
+        <field
+                name="firma"
+                type="text"
+                label="COM_PLANER_FIELD_FIRMA_LABEL"
+                description="COM_PLANER_FIELD_FIRMA_DESC"
+                size="40"
+                class="inputbox validate-title"
+                required="true"
+                default=""
+        />
+        
+		<field
+                name="vorname"
+                type="text"
+                label="COM_PLANER_FIELD_VORNAME_LABEL"
+                description="COM_PLANER_FIELD_VORNAME_DESC"
+                size="40"
+                class="inputbox validate-title"
+                required="true"
+                default=""
+        />
+		
+		<field
+                name="name"
+                type="text"
+                label="COM_PLANER_FIELD_NAME_LABEL"
+                description="COM_PLANER_FIELD_NAME_DESC"
+                size="40"
+                class="inputbox validate-title"
+                required="true"
+                default=""
+        />
+		
+		<field
+                name="street"
+                type="text"
+                label="COM_PLANER_FIELD_STREET_LABEL"
+                description="COM_PLANER_FIELD_STREET_DESC"
+                size="40"
+                class="inputbox validate-title"
+                required="true"
+                default=""
+        />
+		
+		<field
+                name="zusatz"
+                type="text"
+                label="COM_PLANER_FIELD_ZUSATZ_LABEL"
+                description="COM_PLANER_FIELD_ZUSATZ_DESC"
+                size="40"
+                class="inputbox validate-title"
+                required="true"
+                default=""
+        />
+		
+		<field type="spacer" name="Kontodaten" label="Kontodaten" />
+		
+		<field
+                name="kontonummer"
+                type="text"
+                label="COM_PLANER_FIELD_KONTONUMMER_LABEL"
+                description="COM_PLANER_FIELD_KONTONUMMER_DESC"
+                size="40"
+                class="inputbox validate-title"
+                required="true"
+                default=""
+        />
+		
+		<field
+                name="blz"
+                type="text"
+                label="COM_PLANER_FIELD_BLZ_LABEL"
+                description="COM_PLANER_BLZ_FIRMA_DESC"
+                size="40"
+                class="inputbox validate-title"
+                required="true"
+                default=""
+        />
+		
+		<field
+                name="kontoinhaber"
+                type="text"
+                label="COM_PLANER_FIELD_KONTOINHABER_LABEL"
+                description="COM_PLANER_FIELD_KONTOINHABER_DESC"
+                size="40"
+                class="inputbox validate-title"
+                required="true"
+                default=""
+        />
+		
+		<field
+                name="bank"
+                type="text"
+                label="COM_PLANER_FIELD_BANK_LABEL"
+                description="COM_PLANER_FIELD_BANK_DESC"
+                size="40"
+                class="inputbox validate-title"
+                required="true"
+                default=""
+        />
+		
+		<field
+                name="iban"
+                type="text"
+                label="COM_PLANER_FIELD_IBAN_LABEL"
+                description="COM_PLANER_FIELD_IBAN_DESC"
+                size="40"
+                class="inputbox validate-title"
+                required="true"
+                default=""
+        />
+		
+		<field
+                name="bic"
+                type="text"
+                label="COM_PLANER_FIELD_BIC_LABEL"
+                description="COM_PLANER_FIELD_BIC_DESC"
+                size="40"
+                class="inputbox validate-title"
+                required="true"
+                default=""
+        />
+		
+		<field type="spacer" name="Sonstiges" label="Sonstiges" />
+		
+		<field 	name="datei" 
+				type="file" 
+				label="COM_PLANER_FIELD_DATEI_LABEL" 
+				description="COM_PLANER_FIELD_DATEI_DESC" 
+				size="10" 
+				accept="image/*" 
+				
+		/>
+		
+        <field
+                name="description"
+                type="editor"
+                label="COM_PLANER_FIELD_DESCRITION_LABEL"
+                description="COM_PLANER_FIELD_DESCRITION_DESC"
+                required="true"
+                filter="JComponentHelper::filterText"
+        />
+        
+    </fieldset>
+    <fields name="params">
+        <fieldset
+                name="params"
+                label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS"
+        >
+            <field
+                    name="show_title"
+                    type="list"
+                    label="COM_JOBS_JOB_FIELD_SHOW_TITLE_LABEL"
+                    description="COM_JOBS_JOB_FIELD_SHOW_TITLE_DESC"
+                    default=""
+                    >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+            <field
+                    name="show_category"
+                    type="list"
+                    label="COM_JOBS_JOB_FIELD_SHOW_CATEGORY_LABEL"
+                    description="COM_JOBS_JOB_FIELD_SHOW_CATEGORY_DESC"
+                    default=""
+                    >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JHIDE</option>
+                <option value="1">JSHOW</option>
+            </field>
+        </fieldset>
+    </fields>
+</form>
